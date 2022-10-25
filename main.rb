@@ -15,9 +15,8 @@ puts "Сколько у вас евро?"
 user_eur = STDIN.gets.to_f
 puts
 
-if user_usd || user_eur || user_rub <= 10
-  puts "Вы походу бомжара..."
-  exit
+if user_usd <= 10 && user_eur <= 10 && user_rub <= 1000
+  abort 'Вы походу бомжара...'
 end
 
 portfolio.amount(user_rub, user_usd, user_eur)
