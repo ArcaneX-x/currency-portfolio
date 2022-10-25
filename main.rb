@@ -15,7 +15,7 @@ puts "Сколько у вас евро?"
 user_eur = STDIN.gets.to_f
 puts
 
-if user_usd && user_eur && user_rub <= 0
+if user_usd || user_eur || user_rub <= 10
   puts "Вы походу бомжара..."
   exit
 end
