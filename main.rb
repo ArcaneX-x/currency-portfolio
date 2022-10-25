@@ -17,7 +17,7 @@ puts
 
 if user_usd && user_eur && user_rub <= 0
   puts "Вы походу бомжара..."
-  abort
+  exit
 end
 
 portfolio.amount(user_rub, user_usd, user_eur)
