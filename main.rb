@@ -5,6 +5,8 @@ require_relative 'lib/portfolio'
 portfolio = Portfolio.from_xml
 portfolio.print_courses
 
+puts "Давайте создадим бивалютный порфтель:"
+
 puts "Сколько у вас рублей?"
 user_rub = STDIN.gets.to_f
 puts "Сколько у вас долларов?"
